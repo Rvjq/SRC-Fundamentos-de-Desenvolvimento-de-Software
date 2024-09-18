@@ -67,22 +67,22 @@
 python.exe -m venv env 
 ```
 
+>Caso esteja sendo configurado em um computador do Cesar :shipit: executar o seguinte Script
+
+```powershell
+Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
+```
+
 >Ativar venv
 
 ```powershell
-./env/Scripts/activate.exe
+./env/Scripts/activate
 ```
 
 >Instalar Dependencias do projeto (libs)
 
 ```powershell
-pip.exe install -r requirements. txt
-```
-
->Caso esteja sendo configurado em um computador do Cesar :shipit: executar o seguinte Script
-
-```powershell
-Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
+pip.exe install -r requirements.txt
 ```
 
 >O seguinte script atualiza a lista de dependencias (libs)
