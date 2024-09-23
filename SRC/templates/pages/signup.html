@@ -1,36 +1,31 @@
-<html>
-    <head>
-        <title>index</title>
-    </head>
-    <body>
-        <h1> SIGN UP BELOW</h1>
-        {% for message in messages %}
+{% extends "pages/main.html" %}
+{% block content %}
+<h1> SIGN UP BELOW</h1>
+{% for message in messages %}
 
-        <h5>{{message}}</h5>
+<h5>{{message}}</h5>
 
-        {% endfor %}
-        <form method="POST" action="signup">
+{% endfor %}
+<form method="POST" action="signup">
 
-            {% csrf_token %}
+    {% csrf_token %}
 
-            <p>USERNAME</p>
+    <p>USERNAME</p>
 
-            <input type="text" name="username"/>
+    <input type="text" name="username"/>
 
-            <p>EMAIL</p>
+    <p>EMAIL</p>
 
-            <input type="email" name="email"/>
+    <input type="email" name="email"/>
 
-            <p>PASSWORD</p>
+    <p>PASSWORD</p>
 
-            <input type="password" name="password"/>
+    <input type="password" name="password"/>
 
-            <p>ENTER YOUR PASSWORD AGAIN</p>
+    <p>ENTER YOUR PASSWORD AGAIN</p>
 
-            <input type="password" name="password1"/><br>
+    <input type="password" name="password1"/><br>
 
-            <input type="submit"/>
-
-        </form>
-    </body>
-</html>
+    <input type="submit"/>
+</form>
+{% endblock content %}

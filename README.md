@@ -18,29 +18,37 @@
 </p>
 
 ## DRIVE
+
 [Link do drive](https://drive.google.com/drive/u/4/folders/0AFF36nv8gFqdUk9PVA)
-#### Entrega 1
+
+### Entrega 1
+
 [Link da entrega 1](https://drive.google.com/drive/u/4/folders/1EmybUog0gSd-5IMwIwxl0Fgz8bT8nZWN)
 
-
 ## JIRA
+
 ### Kanban
+
 <img src="resources/img/Kanban.png"/>
 
 ### Backlog
+
 <img src="resources/img/backlog.png"/>
 
 ## Storyboard
+
 <img src="resources/img/Storyboard.png"/>
 
 [Link storyboard](https://www.figma.com/design/al5hOfTsa6lACnnjdWik5v/Untitled?node-id=0-1&node-type=CANVAS&t=drVKI27B0PURqVSL-0)
 
 ## Protótipo(sketch)
+
 <img src="resources/img/Prototipo Lo-fi.png"/>
 
 [Link protótipo](https://www.figma.com/design/uWUO2t1XNSkiNllAtFBE8P/Untitled?node-id=0-1&node-type=CANVAS&t=PeLcBHo24RN81PXQ-0)
 
 ## Screencast
+
 [Link screencast](https://drive.google.com/drive/u/4/folders/1EmybUog0gSd-5IMwIwxl0Fgz8bT8nZWN)
 
 ## 💪 Nossa Equipe
