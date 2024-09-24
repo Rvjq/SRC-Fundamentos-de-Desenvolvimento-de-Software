@@ -7,6 +7,26 @@
     </h1>
 </div>
 
+<p align="center">
+  <img
+    src="https://img.shields.io/github/repo-size/Rvjq/SRC-Fundamentos-de-Desenvolvimento-de-Software"
+    alt="Repository Size"
+  />
+  <img
+    src="https://img.shields.io/github/languages/count/Rvjq/SRC-Fundamentos-de-Desenvolvimento-de-Software"
+    alt="Language Count"
+  />
+  <img
+    src="https://img.shields.io/github/commit-activity/t/Rvjq/SRC-Fundamentos-de-Desenvolvimento-de-Software"
+    alt="Commit Activity"
+  />
+  <a href="LICENSE"
+    ><img
+      src="https://img.shields.io/github/license/Rvjq/SRC-Fundamentos-de-Desenvolvimento-de-Software"
+      alt="License"
+  /></a>
+</p>
+
 > [!NOTE]
 > Projeto em inicio de desenvolvimento, sujeito a mudanças.
 
@@ -17,39 +37,83 @@
     A SRC é uma solução poderosa e intuitiva, desenvolvida para transformar a maneira como sua empresa se relaciona com os clientes. Com uma interface amigável e funcionalidades avançadas, o SRC permite gerenciar todas as interações com seus clientes em um único lugar, promovendo um relacionamento mais próximo e personalizado. ⚡
 </p>
 
-## DRIVE
+## ⚙ Tecnologias Utilizadas
 
-[Link do drive](https://drive.google.com/drive/u/4/folders/0AFF36nv8gFqdUk9PVA)
+- **Linguagem de Programação**:<br>![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 
-### Entrega 1
+- **Banco de Dados**:<br>![SQLite](https://img.shields.io/badge/SQLite-003B57?style=for-the-badge&logo=sqlite&logoColor=white)![PostgreSQL](https://img.shields.io/badge/PostgreSQL-336791?style=for-the-badge&logo=postgresql&logoColor=white)
 
-[Link da entrega 1](https://drive.google.com/drive/u/4/folders/1EmybUog0gSd-5IMwIwxl0Fgz8bT8nZWN)
 
-## JIRA
+- **Framework de Desenvolvimento**:<br>![Django](https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white)
 
-### Kanban
+- **Frontend**:<br>![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white)![HTML](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)![CSS](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 
-<img src="resources/img/Kanban.png"/>
+- **Organização**:<br>![Jira](https://img.shields.io/badge/Jira-0052CC?style=for-the-badge&logo=jira&logoColor=white)
 
-### Backlog
+## 🖇️ Links Importantes
 
-<img src="resources/img/backlog.png"/>
+<ul>
+  <li>
+    <a  href="">
+      Link do Site</a
+  </li> 
 
-## Storyboard
+  <li>
+    <a  href="https://cesar-team-e3314sym.atlassian.net/jira/software/projects/SSRC/boards/3?atlOrigin=eyJpIjoiNjM3NmRiYmYyNjk4NDFlOThkMTAxNTEwMmZmMzE0MjEiLCJwIjoiaiJ9"
+      >Link do Jira</a
+    >
+  </li>
+    <li>
+    <a  href="https://drive.google.com/drive/u/4/folders/0AFF36nv8gFqdUk9PVA"
+      >Google Drive</a
+    >
+  </li>
+  
+  <li>
+    <a  href=""
+      >Relatórios de Pair Programming</a
+    >
+  </li>
+</ul>
 
+## ♟️ Entregas
+
+<details>
+<summary>Entrega 1</summary>
+<ul>
+<li> [Link da entrega 1](https://drive.google.com/drive/u/4/folders/1EmybUog0gSd-5IMwIwxl0Fgz8bT8nZWN) </li>
+<li>Kanban <img src="resources/img/Kanban.png"/></li>
+<li>Backlog <img src="resources/img/backlog.png"/></li>
+<li>Storyboard 
 <img src="resources/img/Storyboard.png"/>
 
-[Link storyboard](https://www.figma.com/design/al5hOfTsa6lACnnjdWik5v/Untitled?node-id=0-1&node-type=CANVAS&t=drVKI27B0PURqVSL-0)
-
-## Protótipo(sketch)
-
+[Link storyboard](https://www.figma.com/design/al5hOfTsa6lACnnjdWik5v/Untitled?node-id=0-1&node-type=CANVAS&t=drVKI27B0PURqVSL-0)</li>
+<li>Protótipo(sketch)
 <img src="resources/img/Prototipo Lo-fi.png"/>
 
-[Link protótipo](https://www.figma.com/design/uWUO2t1XNSkiNllAtFBE8P/Untitled?node-id=0-1&node-type=CANVAS&t=PeLcBHo24RN81PXQ-0)
+[Link protótipo](https://www.figma.com/design/uWUO2t1XNSkiNllAtFBE8P/Untitled?node-id=0-1&node-type=CANVAS&t=PeLcBHo24RN81PXQ-0)</li>
+<li>[Link screencast](https://drive.google.com/drive/u/4/folders/1EmybUog0gSd-5IMwIwxl0Fgz8bT8nZWN)</li>
+</ul>
+</details>
 
-## Screencast
+<details>
+<summary>Entrega 2</summary>
+<ul>
+</ul>
+</details>
 
-[Link screencast](https://drive.google.com/drive/u/4/folders/1EmybUog0gSd-5IMwIwxl0Fgz8bT8nZWN)
+<details>
+<summary>Entrega 3</summary>
+<ul>
+</ul>
+</details>
+
+<details>
+<summary>Entrega 4</summary>
+<ul>
+</ul>
+</details>
+
 
 ## 💪 Nossa Equipe
 

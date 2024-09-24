@@ -73,11 +73,11 @@ cd SRC
 python.exe manage.py runserver
 ```
 
-### Contribuindo com Código
+## Contribuindo com Código
 
 Recomendamos o uso do Visual Studio Code (VSCode) para desenvolver o projeto. Para abrir o projeto no VSCode, siga os passos abaixo:
 
-# Abra o VSCode.
+### Abra o VSCode.
 
 Clique em File > Open Folder... e selecione o diretório do projeto SRC.
 Certifique-se de que o ambiente virtual esteja ativado no terminal do VSCode.
