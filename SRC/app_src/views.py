@@ -1,4 +1,4 @@
-from django.shortcuts import redirect, render
+from django.shortcuts import redirect, render, get_object_or_404
 from django.http import HttpResponse
 from django.contrib.auth.models import User
 from django.contrib import messages
@@ -37,3 +37,25 @@ def clientes_create(request):
     else:
         messages.info(request,"Please login first")
         return redirect("login")
+
+def clientes_edit(request, id):
+    cliente = get_object_or_404(Client, id=id)
+    if request.method == 'POST':
+        cliente.firstname = request.POST["nome"]
+        cliente.lastname = request.POST["sobrenome"]
+        cliente.email = request.POST["email"]
+        cliente.telephone = request.POST["telefone"]
+        cliente.interprise = request.POST["empresa"]
+        cliente.description = request.POST["descricao"]
+        cliente.save()
+        messages.info(request,"Cliente editado com sucesso")
+        return redirect('dashboard')
+    else:
+        return render(request, 'app_src/clientes_edit.html', {'cliente': cliente})
+
+def clientes_delete(request, id):
+    cliente = get_object_or_404(Client, id=id)
+    if request.method == 'POST':
+        cliente.delete()
+        return redirect('dashboard')
+    return render(request, 'app_src/clientes_delete.html', {'cliente': cliente})

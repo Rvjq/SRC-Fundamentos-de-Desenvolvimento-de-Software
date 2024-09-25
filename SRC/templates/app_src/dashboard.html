@@ -22,7 +22,9 @@
             <td>{{ cliente.telephone }}</td>
             <td>{{ cliente.interprise }}</td>
             <td>{{ cliente.description }}</td>
-            <td>
+            <td>                
+                <a href="{% url 'clientes_edit' cliente.id %}">Editar</a>
+                <a href="{% url 'clientes_delete' cliente.id %}">Excluir</a>
             </td>
         </tr>
         {% endfor %}

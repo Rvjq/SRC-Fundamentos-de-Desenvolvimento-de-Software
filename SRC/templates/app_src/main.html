@@ -15,24 +15,23 @@
 <body class="p-3 m-0 border-0 bd-example m-0 border-0 custom-bg">
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
-      <a class="navbar-brand" href="/">SRC</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+      <a class="navbar-brand" href="plataforma">SRC</a>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="dashboard">Dashboard</a>
+            <a class="nav-link" aria-current="page" href="{% url 'dashboard' %}">Dashboard</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="plataforma">Plataforma</a>
+            <a class="nav-link" href="{% url 'plataforma' %}">Plataforma</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/auth/logout">Logout</a>
+            <a class="nav-link" href="{% url 'logout' %}">Logout</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="clientes/create">Adicionar cliente</a>
+            <a class="nav-link" href="{% url 'clientes_create' %}">Adicionar cliente</a>
           </li>
+          <li class="nav-item">
+            <p class="navbar-brand">Logado como: {{user}}</p>
         </ul>
       </div>
     </div>
