@@ -74,6 +74,10 @@
       >Relatórios de Pair Programming</a
     >
   </li>
+
+  <li>
+      <a href="https://www.figma.com/design/v2MFVdrlPt0dR9tNkSNnSO/Diagrama-de-atividades?node-id=3-344&t=pKMODNf0WfTjQbNz-1">Diagrama de atividades</a>
+  </li>
 </ul>
 
 ## ♟️ Entregas
