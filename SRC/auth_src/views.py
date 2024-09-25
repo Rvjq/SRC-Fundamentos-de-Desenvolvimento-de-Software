@@ -1,6 +1,6 @@
 from django.shortcuts import redirect, render
 from django.http import HttpResponse
-from django.contrib.auth import authenticate, login as django_login
+from django.contrib.auth import authenticate, login as django_login, logout as django_logout
 from django.contrib.auth.models import User
 from django.contrib import messages
 
@@ -48,10 +48,12 @@ def login(request):
             return redirect("login")
     else:
         return render(request, "auth_src/login.html")
-
-def plataforma(request):
+    
+def logout (request):
     if request.user.is_authenticated:  
-        return render(request, 'auth_src/plataforma.html')
+        django_logout(request)
+        messages.info(request,"Successeful logout")
+        return redirect("login")
     else:
         messages.info(request,"Please login first")
         return redirect("login")
