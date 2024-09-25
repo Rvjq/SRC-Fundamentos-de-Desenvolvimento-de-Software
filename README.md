@@ -112,10 +112,14 @@
 [Relatorio programação em par](https://docs.google.com/document/d/1ibIL1OkDHEmPx4BmkdCzSgLIkITkaGlZJEfXKGVOQrg/edit?usp=sharing)</li>
 <li>
 
-[Issue Tracker](https://github.com/Rvjq/SRC-Fundamentos-de-Desenvolvimento-de-Software/issues?q=is%3Aissue+)<img src="resources/img/IssueTracker.PNG"></li>
+[Screecast das funcionalidades adicionadas](https://drive.google.com/file/d/1mG_zr6Wy62EoqwJ-rozBdPRnU7t8NMtf/view?usp=sharing)</li>
 <li>
 
-[Quadro da Sprint 1](https://cesar-team-e3314sym.atlassian.net/jira/software/projects/SSRC/boards/3?atlOrigin=eyJpIjoiODgwZjczZGIzMDIxNDYzMzhhZTAwZGEyNzNlMzk1N2IiLCJwIjoiaiJ9)<img src="resources/img/Quadro.PNG"><img src="resources/img/Backlog1.PNG"></li>
+[Issue Tracker](https://github.com/Rvjq/SRC-Fundamentos-de-Desenvolvimento-de-Software/issues?q=is%3Aissue+)
+<img src="resources/img/IssueTracker.PNG"></li>
+<li>
+
+[Quadro da Sprint 1](https://cesar-team-e3314sym.atlassian.net/jira/software/projects/SSRC/boards/3?atlOrigin=eyJpIjoiODgwZjczZGIzMDIxNDYzMzhhZTAwZGEyNzNlMzk1N2IiLCJwIjoiaiJ9)<img src="resources/img/Quadro.PNG">)<img src="resources/img/Quadro1.PNG"><img src="resources/img/Backlog1.PNG"></li>
 </ul>
 </details>
 
