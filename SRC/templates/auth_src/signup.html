@@ -1,31 +1,32 @@
 {% extends "auth_src/main.html" %}
 {% block content %}
-<h1> SIGN UP BELOW</h1>
-{% for message in messages %}
+<header class="masthead text-center text-white">
+    <div class="masthead-content">
+        <div class="container px-5">
+            <form method="POST" action="signup">
+                
+                {% csrf_token %}
 
-<h5>{{message}}</h5>
+                <h1 class="masthead-heading mb-0">SIGN UP</h1>
 
-{% endfor %}
-<form method="POST" action="signup">
+                {% for message in messages %}
+                
+                <h5 class="masthead-subheading">{{message}}</h5>
+                
+                {% endfor %}
 
-    {% csrf_token %}
+                <input type="text" name="username" class="masthead-subheading mb-3 form-control" placeholder="Username"/>
+                <input type="email" name="email" class="masthead-subheading mb-3 form-control" placeholder="Email"/>
+                <input type="password" class="masthead-subheading mb-3 form-control" name="password" placeholder="Password"/>
+                <input type="password" class="masthead-subheading mb-3 form-control" name="password1" placeholder="Re-enter Password"/>
 
-    <p>USERNAME</p>
-
-    <input type="text" name="username"/>
-
-    <p>EMAIL</p>
-
-    <input type="email" name="email"/>
-
-    <p>PASSWORD</p>
-
-    <input type="password" name="password"/>
-
-    <p>ENTER YOUR PASSWORD AGAIN</p>
-
-    <input type="password" name="password1"/><br>
-
-    <input type="submit"/>
-</form>
+                <input type="submit" class="btn btn-primary btn-xl rounded-pill mt-5"/>
+            </form>
+        </div>
+    </div>
+    <div class="bg-circle-1 bg-circle"></div>
+    <div class="bg-circle-2 bg-circle"></div>
+    <div class="bg-circle-3 bg-circle"></div>
+    <div class="bg-circle-4 bg-circle"></div>
+</header>
 {% endblock content %}

@@ -1,4 +1,70 @@
 {% extends "pages/main.html" %}
+{% load static %}
 {% block content %}
-Bem vindo ao SRC.
+<!-- Header-->
+<header class="masthead text-center text-white">
+    <div class="masthead-content">
+        <div class="container px-5">
+            <h1 class="masthead-heading mb-0">Bem-vindos!</h1>
+            <h2 class="masthead-subheading mb-0">A Smart Relationship with Clients</h2>
+            <a class="btn btn-primary btn-xl rounded-pill mt-5" href="#scroll">Saiba mais</a>
+        </div>
+    </div>
+    <div class="bg-circle-1 bg-circle"></div>
+    <div class="bg-circle-2 bg-circle"></div>
+    <div class="bg-circle-3 bg-circle"></div>
+    <div class="bg-circle-4 bg-circle"></div>
+</header>
+<!-- Content section 1-->
+<section id="scroll">
+    <div class="container px-5">
+        <div class="row gx-5 align-items-center">
+            <div class="col-lg-6 order-lg-2">
+                <div class="p-5"><img class="img-fluid rounded-circle" src="{% static 'pages/img/01.jpg' %}" alt="..." /></div>
+            </div>
+            <div class="col-lg-6 order-lg-1">
+                <div class="p-5">
+                    <h2 class="display-6">Centralize e Organize suas Interações</h2>
+                    <p>Com nosso CRM, você pode gerenciar todas as interações com seus clientes em um único lugar. Isso elimina a confusão de usar múltiplas ferramentas e garante que todas as informações estejam acessíveis e atualizadas.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Content section 2-->
+<section>
+    <div class="container px-5">
+        <div class="row gx-5 align-items-center">
+            <div class="col-lg-6">
+                <div class="p-5"><img class="img-fluid rounded-circle" src="{% static 'pages/img/02.jpg' %}" alt="..." /></div>
+            </div>
+            <div class="col-lg-6">
+                <div class="p-5">
+                    <h2 class="display-6">Personalize o Relacionamento com seus Clientes</h2>
+                    <p>Acompanhe o histórico de cada cliente e ofereça uma experiência personalizada. Nosso CRM ajuda sua empresa a entender melhor seus clientes, criando interações mais significativas e duradouras.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Content section 3-->
+<section>
+    <div class="container px-5">
+        <div class="row gx-5 align-items-center">
+            <div class="col-lg-6 order-lg-2">
+                <div class="p-5"><img class="img-fluid rounded-circle" src="{% static 'pages/img/03.jpg' %}" alt="..." /></div>
+            </div>
+            <div class="col-lg-6 order-lg-1">
+                <div class="p-5">
+                    <h2 class="display-6">Aumente a Produtividade e Eficiência</h2>
+                    <p>Automatize tarefas repetitivas e tenha mais tempo para focar no que realmente importa: seus clientes. Com nossa interface intuitiva, sua equipe trabalha de forma mais rápida e eficiente.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Footer-->
+<footer class="py-5 bg-black">
+    <div class="container px-5"><p class="m-0 text-center text-white small">Copyright &copy; Smart Relationship with Clients 2024</p></div>
+</footer>
 {% endblock content %}
