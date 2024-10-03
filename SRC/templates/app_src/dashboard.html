@@ -1,33 +1,33 @@
 {% extends "app_src/main.html" %}
 {% block content %}
-<h2>Lista de Clientes</h2>
-<table class="table table-dark">
-    <thead>
-        <tr>
-            <th>Nome</th>
-            <th>Sobrenome</th>
-            <th>Email</th>
-            <th>Telefone</th>
-            <th>Empresa</th>
-            <th>Descrição</th>
-            <th>Ações</th>
-        </tr>
-    </thead>
-    <tbody>
-        {% for cliente in clientes %}
-        <tr>
-            <td>{{ cliente.firstname }}</td>
-            <td>{{ cliente.lastname }}</td>
-            <td>{{ cliente.email }}</td>
-            <td>{{ cliente.telephone }}</td>
-            <td>{{ cliente.interprise }}</td>
-            <td>{{ cliente.description }}</td>
-            <td>                
-                <a href="{% url 'clientes_edit' cliente.id %}">Editar</a>
-                <a href="{% url 'clientes_delete' cliente.id %}">Excluir</a>
-            </td>
-        </tr>
-        {% endfor %}
-    </tbody>
-</table>
+    <h2>Lista de Clientes</h2>
+    <table class="table table-dark">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Sobrenome</th>
+                <th>Email</th>
+                <th>Telefone</th>
+                <th>Empresa</th>
+                <th>Descrição</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for cliente in clientes %}
+                <tr>
+                    <td>{{ cliente.firstname }}</td>
+                    <td>{{ cliente.lastname }}</td>
+                    <td>{{ cliente.email }}</td>
+                    <td>{{ cliente.telephone }}</td>
+                    <td>{{ cliente.interprise }}</td>
+                    <td>{{ cliente.description }}</td>
+                    <td>
+                        <a href="{% url 'clientes_edit' cliente.id %}">Editar</a>
+                        <a href="{% url 'clientes_delete' cliente.id %}">Excluir</a>
+                    </td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
 {% endblock content %}

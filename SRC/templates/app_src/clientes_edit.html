@@ -1,34 +1,21 @@
 {% extends "app_src/main.html" %}
 {% block content %}
-<h2>Editar Cliente</h2>
-{% for message in messages %}
-
-<h5>{{message}}</h5>
-
-{% endfor %}
-<form method="POST">
-  {% csrf_token %}
-
-  <p>Nome</p>
-  <input type="text" name="nome"/>
-
-  <p>Sobrenome</p>
-  <input type="text" name="sobrenome"/>
-
-  <p>Telefone</p>
-  <input type="text" name="telefone"/>
-
-  <p>Email</p>
-  <input type="text" name="email"/>
-
-  <p>Empresa</p>
-  <input type="text" name="empresa"/>
-
-  <p>Descrição</p>
-  <input type="text" name="descricao"/>
-
-  <input type="submit"/>
-
-</form>
-
+    <h2>Editar Cliente</h2>
+    {% for message in messages %}<h5>{{ message }}</h5>{% endfor %}
+    <form method="POST">
+        {% csrf_token %}
+        <p>Nome</p>
+        <input type="text" name="nome" />
+        <p>Sobrenome</p>
+        <input type="text" name="sobrenome" />
+        <p>Telefone</p>
+        <input type="text" name="telefone" />
+        <p>Email</p>
+        <input type="text" name="email" />
+        <p>Empresa</p>
+        <input type="text" name="empresa" />
+        <p>Descrição</p>
+        <input type="text" name="descricao" />
+        <input type="submit" />
+    </form>
 {% endblock content %}
