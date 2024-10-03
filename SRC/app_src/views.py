@@ -1,24 +1,20 @@
 from django.shortcuts import redirect, render, get_object_or_404
+from django.contrib.auth.decorators import login_required
 from django.http import HttpResponse
 from django.contrib.auth.models import User
 from django.contrib import messages
 from .models import Client
 
+@login_required
 def dashboard(request):
-    if request.user.is_authenticated:  
-        clientes = Client.objects.filter(contractor=request.user) 
-        return render(request, 'app_src/dashboard.html', {'clientes': clientes})
-    else:
-        messages.info(request,"Please login first")
-        return redirect("login")
+    clientes = Client.objects.filter(contractor=request.user) 
+    return render(request, 'app_src/dashboard.html', {'clientes': clientes})
 
+@login_required
 def plataforma(request):
-    if request.user.is_authenticated:  
-        return render(request, 'app_src/plataforma.html')
-    else:
-        messages.info(request,"Please login first")
-        return redirect("login")
-      
+    return render(request, 'app_src/plataforma.html')
+
+@login_required
 def clientes_create(request):
     if request.user.is_authenticated:  
         if request.method == "POST":
@@ -38,6 +34,7 @@ def clientes_create(request):
         messages.info(request,"Please login first")
         return redirect("login")
 
+@login_required
 def clientes_edit(request, id):
     cliente = get_object_or_404(Client, id=id)
     if request.method == 'POST':
@@ -53,6 +50,7 @@ def clientes_edit(request, id):
     else:
         return render(request, 'app_src/clientes_edit.html', {'cliente': cliente})
 
+@login_required
 def clientes_delete(request, id):
     cliente = get_object_or_404(Client, id=id)
     if request.method == 'POST':

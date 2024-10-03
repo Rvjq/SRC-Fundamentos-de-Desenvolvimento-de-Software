@@ -1,5 +1,5 @@
 from django.shortcuts import redirect, render
-from django.http import HttpResponse
+from django.http import HttpResponse, HttpRequest
 from django.contrib.auth import authenticate, login as django_login, logout as django_logout
 from django.contrib.auth.models import User
 from django.contrib import messages
@@ -33,6 +33,7 @@ def signup(request):
     else:
         return render(request, "auth_src/signup.html")
 
+
 def login(request):
 
     if request.method == "POST":
@@ -42,13 +43,15 @@ def login(request):
         user = authenticate(username=user_name, password=user_password)
         if user is not None:
             django_login(request,user)
-            return redirect("plataforma")
+            try: return redirect(request.GET.get('next', None))
+            except TypeError: return redirect("plataforma")
         else:
             messages.info(request,"Invalid credentials")
             return redirect("login")
     else:
         return render(request, "auth_src/login.html")
-    
+
+
 def logout (request):
     if request.user.is_authenticated:  
         django_logout(request)
