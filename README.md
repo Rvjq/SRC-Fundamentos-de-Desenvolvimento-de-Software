@@ -202,6 +202,7 @@ python.exe manage.py runserver
 #### Black python formatter
 
 [github](https://github.com/psf/black)
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 
 black ./
 
@@ -210,6 +211,7 @@ black --check ./
 #### Isort import formatter
 
 [github](https://github.com/PyCQA/isort)
+[![Imports: isort](https://img.shields.io/badge/%20imports-isort-%231674b1?style=flat&labelColor=ef8336)](https://pycqa.github.io/isort/)
 
 isort .
 
@@ -222,6 +224,7 @@ flake8
 #### Djlint Django html template linter/formatter
 
 [github](https://github.com/djlint/djLint)
+[![Code style: djlint](https://img.shields.io/badge/html%20style-djlint-blue.svg)](https://www.djlint.com)
 
 djlint . --extension=html --lint
 djlint . --extension=html --check
