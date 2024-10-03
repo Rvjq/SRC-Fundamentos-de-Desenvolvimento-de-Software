@@ -56,7 +56,7 @@
   <li>
     <a  href="">
       Link do Site</a
-  </li> 
+  </li>
 
   <li>
     <a  href="https://cesar-team-e3314sym.atlassian.net/jira/software/projects/SSRC/boards/3?atlOrigin=eyJpIjoiNjM3NmRiYmYyNjk4NDFlOThkMTAxNTEwMmZmMzE0MjEiLCJwIjoiaiJ9"
@@ -68,7 +68,7 @@
       >Google Drive</a
     >
   </li>
-  
+
   <li>
     <a  href=""
       >Relatórios de Pair Programming</a
@@ -81,12 +81,12 @@
 <details>
 <summary>Entrega 1</summary>
 <ul>
-<li> 
+<li>
 
 [Link da entrega 1](https://drive.google.com/drive/u/4/folders/1EmybUog0gSd-5IMwIwxl0Fgz8bT8nZWN) </li>
 <li>Kanban <img src="resources/img/Kanban.png"/></li>
 <li>Backlog <img src="resources/img/backlog.png"/></li>
-<li>Storyboard 
+<li>Storyboard
 <img src="resources/img/Storyboard.png"/>
 
 [Link storyboard](https://www.figma.com/design/al5hOfTsa6lACnnjdWik5v/Untitled?node-id=0-1&node-type=CANVAS&t=drVKI27B0PURqVSL-0)</li>
@@ -157,7 +157,7 @@
 >Criar venv
 
 ```powershell
-python.exe -m venv env 
+python.exe -m venv env
 ```
 
 >Caso esteja sendo configurado em um computador do Cesar :shipit: executar o seguinte Script
@@ -197,3 +197,37 @@ cd SRC
 ```powershell
 python.exe manage.py runserver
 ```
+### Outro comandos
+
+#### Black python formatter
+
+[github](https://github.com/psf/black)
+
+black ./
+
+black --check ./
+
+#### Isort import formatter
+
+[github](https://github.com/PyCQA/isort)
+
+isort .
+
+#### Flake8 python linter
+
+[github](https://github.com/PyCQA/flake8)
+
+flake8
+
+#### Djlint Django html template linter/formatter
+
+[github](https://github.com/djlint/djLint)
+
+djlint . --extension=html --lint
+djlint . --extension=html --check
+djlint . --extension=html --reformat
+
+#### Pre commit
+
+pre-commit install
+pre-commit run --all-files
