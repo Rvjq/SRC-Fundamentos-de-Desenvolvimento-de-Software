@@ -197,40 +197,72 @@ cd SRC
 ```powershell
 python.exe manage.py runserver
 ```
-### Outro comandos
+### 📜 Outro comandos
 
 #### Black python formatter
+[![Code style: black](https://img.shields.io/badge/Code%20Style-Black-000000.svg)](https://github.com/psf/black)
 
-[github](https://github.com/psf/black)
-[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+[Github repo](https://github.com/psf/black)
 
+>Formats python files
+
+```powershell
 black ./
+```
 
+```powershell
 black --check ./
+```
 
 #### Isort import formatter
+[![Imports: isort](https://img.shields.io/badge/%20Imports-Isort-%231674b1?style=flat&labelColor=ef8336)](https://pycqa.github.io/isort/)
 
-[github](https://github.com/PyCQA/isort)
-[![Imports: isort](https://img.shields.io/badge/%20imports-isort-%231674b1?style=flat&labelColor=ef8336)](https://pycqa.github.io/isort/)
+[Github repo](https://github.com/PyCQA/isort)
 
+>Formats python imports
+
+```
 isort .
+```
 
 #### Flake8 python linter
+[![Code style: djlint](https://img.shields.io/badge/Code%20linter-Flake8-green.svg)](https://github.com/PyCQA/flake8)
 
-[github](https://github.com/PyCQA/flake8)
+[Github Repo](https://github.com/PyCQA/flake8)
 
+> Lints python files
+
+```
 flake8
+```
 
 #### Djlint Django html template linter/formatter
+[![Code style: djlint](https://img.shields.io/badge/Html%20Style-Djlint-blue.svg)](https://www.djlint.com)
 
-[github](https://github.com/djlint/djLint)
-[![Code style: djlint](https://img.shields.io/badge/html%20style-djlint-blue.svg)](https://www.djlint.com)
+[Github Repo](https://github.com/djlint/djLint)
 
+> Lints/Formats Django html templates
+
+```
 djlint . --extension=html --lint
+```
+
+```
 djlint . --extension=html --check
+```
+
+```
 djlint . --extension=html --reformat
+```
 
 #### Pre commit
 
+>Runs pre-commits test
+
+```
 pre-commit install
+```
+
+```
 pre-commit run --all-files
+```
