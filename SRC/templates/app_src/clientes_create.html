@@ -1,6 +1,6 @@
 {% extends "app_src/main.html" %}
 {% block content %}
-    <form method="POST" action="create">
+    <form method="post">
         {% csrf_token %}
         <h1>CRIAR CLIENTE</h1>
         {% for message in messages %}<h5>{{ message }}</h5>{% endfor %}

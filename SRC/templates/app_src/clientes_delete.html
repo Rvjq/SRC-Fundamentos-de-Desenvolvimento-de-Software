@@ -1,7 +1,7 @@
 {% extends "app_src/main.html" %}
 {% block content %}
     <h2>Tem certeza que deseja excluir o cliente "{{ cliente.firstname }}"?</h2>
-    <form method="POST">
+    <form method="post">
         {% csrf_token %}
         <button type="submit">Confirmar Exclusão</button>
     </form>

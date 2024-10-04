@@ -2,7 +2,7 @@
 {% block content %}
     <h2>Editar Cliente</h2>
     {% for message in messages %}<h5>{{ message }}</h5>{% endfor %}
-    <form method="POST">
+    <form method="post">
         {% csrf_token %}
         <p>Nome</p>
         <input type="text" name="nome" />
