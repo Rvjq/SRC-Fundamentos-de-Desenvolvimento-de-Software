@@ -1,3 +1,5 @@
+from functools import wraps
+
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.models import User
@@ -5,6 +7,31 @@ from django.http import HttpResponse
 from django.shortcuts import get_object_or_404, redirect, render
 
 from .models import Client
+
+
+# Verifica se o usuario logado é dono do objeto a ser visto na DB ou se ele é superuser.
+def is_owner():
+    def decorator(view_func):
+        @wraps(view_func)
+        def _wrapped_view(request, *args, **kwargs):
+            cliente = get_object_or_404(Client, id=kwargs.get("id", None))
+
+            # Verifica se o usuário é administrador (superuser)
+            if request.user.is_superuser:
+                return view_func(request, *args, **kwargs)
+            # Verifica se o usuario tem o mesmo nome do objeto (owner)
+            if request.user.id == cliente.contractor.id:
+                print("pass")
+                return view_func(request, *args, **kwargs)
+            else:
+                return redirect("dashboard")  # 403 Redireciona para a página de login
+
+        return _wrapped_view
+
+    return decorator
+
+
+# ------------------------------VIEWS----------------------------------
 
 
 @login_required
@@ -44,6 +71,7 @@ def clientes_create(request):
 
 
 @login_required
+@is_owner()
 def clientes_edit(request, id):
     cliente = get_object_or_404(Client, id=id)
     if request.method == "POST":
@@ -61,6 +89,7 @@ def clientes_edit(request, id):
 
 
 @login_required
+@is_owner()
 def clientes_delete(request, id):
     cliente = get_object_or_404(Client, id=id)
     if request.method == "POST":
