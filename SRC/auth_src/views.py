@@ -10,7 +10,7 @@ from django.shortcuts import redirect, render
 
 
 def signup(request):
-    if request.user.is_authenticated:  
+    if request.user.is_authenticated:
         return redirect("dashboard")
     else:
         if request.method == "POST":
@@ -42,7 +42,7 @@ def signup(request):
 
 
 def login(request):
-    if request.user.is_authenticated:  
+    if request.user.is_authenticated:
         return redirect("dashboard")
     else:
         if request.method == "POST":

@@ -13,11 +13,14 @@
                     <p class="mb-0">{{ cliente.telephone }}</p>
                     <p class="mb-0">{{ cliente.interprise }}</p>
                     <p class="mb-0">{{ cliente.description }}</p>
-                    <a class="text-white text-center text-decoration-none fs-5" href="{% url 'clientes_edit' cliente.id %}"><i class=" bi-pencil"></i></a>
-                    <a class="text-white text-center text-decoration-none fs-5 mx-3" href="{% url 'clientes_delete' cliente.id %}"><i class=" bi-trash"></i></a>
+                    <a class="text-white text-center text-decoration-none fs-5"
+                       href="{% url 'clientes_edit' cliente.id %}"><i class=" bi-pencil"></i></a>
+                    <a class="text-white text-center text-decoration-none fs-5 mx-3"
+                       href="{% url 'clientes_delete' cliente.id %}"><i class=" bi-trash"></i></a>
                 </div>
             {% endfor %}
-            <a href="{% url 'clientes_create' %}" class="text-white text-center text-decoration-none text-small"><i class=" bi-plus"></i>Adicionar cliente</a>
+            <a href="{% url 'clientes_create' %}"
+               class="text-white text-center text-decoration-none text-small"><i class=" bi-plus"></i>Adicionar cliente</a>
         </div>
     </div>
 {% endblock content %}
