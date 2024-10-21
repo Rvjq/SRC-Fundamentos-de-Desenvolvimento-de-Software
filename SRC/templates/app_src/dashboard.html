@@ -1,33 +1,23 @@
 {% extends "app_src/main.html" %}
 {% block content %}
-    <h2>Lista de Clientes</h2>
-    <table class="table table-dark">
-        <thead>
-            <tr>
-                <th>Nome</th>
-                <th>Sobrenome</th>
-                <th>Email</th>
-                <th>Telefone</th>
-                <th>Empresa</th>
-                <th>Descrição</th>
-                <th>Ações</th>
-            </tr>
-        </thead>
-        <tbody>
+    <div class="container-fluid bg-dark bg-opacity-50 text-white">
+        <h2 class="subheading mb-0">Dashboard</h2>
+    </div>
+    <div class="row flex-nowrap">
+        <div class="col-auto p-3 m-4 bg-dark rounded">
+            <p class="subheading text-white">Clientes</p>
             {% for cliente in clientes %}
-                <tr>
-                    <td>{{ cliente.firstname }}</td>
-                    <td>{{ cliente.lastname }}</td>
-                    <td>{{ cliente.email }}</td>
-                    <td>{{ cliente.telephone }}</td>
-                    <td>{{ cliente.interprise }}</td>
-                    <td>{{ cliente.description }}</td>
-                    <td>
-                        <a href="{% url 'clientes_edit' cliente.id %}">Editar</a>
-                        <a href="{% url 'clientes_delete' cliente.id %}">Excluir</a>
-                    </td>
-                </tr>
+                <div class="container-fluid bg-light bg-opacity-10 text-white rounded p-2">
+                    <p class="mb-0">{{ cliente.firstname }} {{ cliente.lastname }}</p>
+                    <p class="mb-0">{{ cliente.email }}</p>
+                    <p class="mb-0">{{ cliente.telephone }}</p>
+                    <p class="mb-0">{{ cliente.interprise }}</p>
+                    <p class="mb-0">{{ cliente.description }}</p>
+                    <a class="text-white text-center text-decoration-none fs-5" href="{% url 'clientes_edit' cliente.id %}"><i class=" bi-pencil"></i></a>
+                    <a class="text-white text-center text-decoration-none fs-5 mx-3" href="{% url 'clientes_delete' cliente.id %}"><i class=" bi-trash"></i></a>
+                </div>
             {% endfor %}
-        </tbody>
-    </table>
+            <a href="{% url 'clientes_create' %}" class="text-white text-center text-decoration-none text-small"><i class=" bi-plus"></i>Adicionar cliente</a>
+        </div>
+    </div>
 {% endblock content %}

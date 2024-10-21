@@ -2,20 +2,20 @@
 {% block content %}
     <header class="masthead text-center text-white">
         <div class="masthead-content">
-            <div class="container px-5">
+            <div class="rounded-box container px-5">
                 <form method="post" action="">
                     {% csrf_token %}
-                    <h1 class="masthead-heading mb-0">LOG IN</h1>
-                    {% for message in messages %}<h5 class="masthead-subheading">{{ message }}</h5>{% endfor %}
+                    <h1 class="heading mb-0">LOG IN</h1>
+                    {% for message in messages %}<h5 class="subheading">{{ message }}</h5>{% endfor %}
                     <input type="text"
                            name="username"
-                           class="masthead-subheading mb-3 form-control"
+                           class="subheading mb-3 form-control"
                            placeholder="Username" />
                     <input type="password"
                            name="password"
-                           class="masthead-subheading mb-0 form-control"
+                           class="subheading mb-4 form-control"
                            placeholder="Password" />
-                    <input type="submit" class="btn btn-primary btn-xl rounded-pill mt-5" />
+                    <input type="submit" class="btn btn-primary btn-l rounded-pill" />
                 </form>
             </div>
         </div>

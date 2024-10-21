@@ -41,11 +41,6 @@ def dashboard(request):
 
 
 @login_required
-def plataforma(request):
-    return render(request, "app_src/plataforma.html")
-
-
-@login_required
 def clientes_create(request):
     if request.method == "POST":
         nome = request.POST["nome"]
