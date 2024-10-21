@@ -56,7 +56,7 @@
   <li>
     <a  href="">
       Link do Site</a
-  </li> 
+  </li>
 
   <li>
     <a  href="https://cesar-team-e3314sym.atlassian.net/jira/software/projects/SSRC/boards/3?atlOrigin=eyJpIjoiNjM3NmRiYmYyNjk4NDFlOThkMTAxNTEwMmZmMzE0MjEiLCJwIjoiaiJ9"
@@ -68,7 +68,7 @@
       >Google Drive</a
     >
   </li>
-  
+
   <li>
     <a  href=""
       >Relatórios de Pair Programming</a
@@ -81,12 +81,12 @@
 <details>
 <summary>Entrega 1</summary>
 <ul>
-<li> 
+<li>
 
 [Link da entrega 1](https://drive.google.com/drive/u/4/folders/1EmybUog0gSd-5IMwIwxl0Fgz8bT8nZWN) </li>
 <li>Kanban <img src="resources/img/Kanban.png"/></li>
 <li>Backlog <img src="resources/img/backlog.png"/></li>
-<li>Storyboard 
+<li>Storyboard
 <img src="resources/img/Storyboard.png"/>
 
 [Link storyboard](https://www.figma.com/design/al5hOfTsa6lACnnjdWik5v/Untitled?node-id=0-1&node-type=CANVAS&t=drVKI27B0PURqVSL-0)</li>
@@ -157,7 +157,7 @@
 >Criar venv
 
 ```powershell
-python.exe -m venv env 
+python.exe -m venv env
 ```
 
 >Caso esteja sendo configurado em um computador do Cesar :shipit: executar o seguinte Script
@@ -196,4 +196,73 @@ cd SRC
 
 ```powershell
 python.exe manage.py runserver
+```
+### 📜 Outro comandos
+
+#### Black python formatter
+[![Code style: black](https://img.shields.io/badge/Code%20Style-Black-000000.svg)](https://github.com/psf/black)
+
+[Github repo](https://github.com/psf/black)
+
+>Formats python files
+
+```powershell
+black ./
+```
+
+```powershell
+black --check ./
+```
+
+#### Isort import formatter
+[![Imports: isort](https://img.shields.io/badge/%20Imports-Isort-%231674b1?style=flat&labelColor=ef8336)](https://pycqa.github.io/isort/)
+
+[Github repo](https://github.com/PyCQA/isort)
+
+>Formats python imports
+
+```
+isort .
+```
+
+#### Flake8 python linter
+[![Code style: djlint](https://img.shields.io/badge/Code%20linter-Flake8-green.svg)](https://github.com/PyCQA/flake8)
+
+[Github Repo](https://github.com/PyCQA/flake8)
+
+> Lints python files
+
+```
+flake8
+```
+
+#### Djlint Django html template linter/formatter
+[![Code style: djlint](https://img.shields.io/badge/Html%20Style-Djlint-blue.svg)](https://www.djlint.com)
+
+[Github Repo](https://github.com/djlint/djLint)
+
+> Lints/Formats Django html templates
+
+```
+djlint . --extension=html --lint
+```
+
+```
+djlint . --extension=html --check
+```
+
+```
+djlint . --extension=html --reformat
+```
+
+#### Pre commit
+
+>Runs pre-commits test
+
+```
+pre-commit install
+```
+
+```
+pre-commit run --all-files
 ```

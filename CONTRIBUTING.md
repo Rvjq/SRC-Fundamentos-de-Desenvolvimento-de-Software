@@ -32,7 +32,7 @@ cd SRC-Fundamentos-de-Desenvolvimento-de-Software
 >Criar venv
 
 ```powershell
-python.exe -m venv env 
+python.exe -m venv env
 ```
 
 >Caso esteja sendo configurado em um computador do Cesar :shipit: executar o seguinte Script

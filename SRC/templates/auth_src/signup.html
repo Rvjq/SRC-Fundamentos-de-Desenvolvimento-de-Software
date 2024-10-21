@@ -1,31 +1,35 @@
 {% extends "auth_src/main.html" %}
 {% block content %}
-<h1> SIGN UP BELOW</h1>
-{% for message in messages %}
-
-<h5>{{message}}</h5>
-
-{% endfor %}
-<form method="POST" action="signup">
-
-    {% csrf_token %}
-
-    <p>USERNAME</p>
-
-    <input type="text" name="username"/>
-
-    <p>EMAIL</p>
-
-    <input type="email" name="email"/>
-
-    <p>PASSWORD</p>
-
-    <input type="password" name="password"/>
-
-    <p>ENTER YOUR PASSWORD AGAIN</p>
-
-    <input type="password" name="password1"/><br>
-
-    <input type="submit"/>
-</form>
+    <header class="masthead text-center text-white">
+        <div class="masthead-content">
+            <div class="rounded-box container px-5">
+                <form method="post" action="signup">
+                    {% csrf_token %}
+                    <h1 class="heading mb-0">SIGN UP</h1>
+                    {% for message in messages %}<h5 class="subheading">{{ message }}</h5>{% endfor %}
+                    <input type="text"
+                           name="username"
+                           class="subheading mb-3 form-control"
+                           placeholder="Username" />
+                    <input type="email"
+                           name="email"
+                           class="subheading mb-3 form-control"
+                           placeholder="Email" />
+                    <input type="password"
+                           class="subheading mb-3 form-control"
+                           name="password"
+                           placeholder="Password" />
+                    <input type="password"
+                           class="subheading mb-3 form-control"
+                           name="password1"
+                           placeholder="Re-enter Password" />
+                    <input type="submit" class="btn btn-primary btn-l rounded-pill" />
+                </form>
+            </div>
+        </div>
+        <div class="bg-circle-1 bg-circle"></div>
+        <div class="bg-circle-2 bg-circle"></div>
+        <div class="bg-circle-3 bg-circle"></div>
+        <div class="bg-circle-4 bg-circle"></div>
+    </header>
 {% endblock content %}
